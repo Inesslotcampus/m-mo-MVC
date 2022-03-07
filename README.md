@@ -53,5 +53,8 @@ if($params[0] != ""){
     // Ici aucun paramètre n'est défini
 }
 
+## framework
+
+__Bibliothèque de code, fonctionnalités toutes prêtes, ensemble d'outils d'aide; Debug intégré dans framework__
 
 
