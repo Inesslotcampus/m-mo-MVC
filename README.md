@@ -1,6 +1,6 @@
 # memo-MVC
 
-__ MVC ( modèle-vu-controleur) =motif architecture logicielle déstiné aux interfaces graphiques très populaire pour appli web. Permet d'organiser son code source. Permet de savoir quel fichier créer et leurs rôles. Utilisé dans bcp de frameworks
+__MVC ( modèle-vu-controleur) =motif architecture logicielle déstiné aux interfaces graphiques très populaire pour appli web. Permet d'organiser son code source. Permet de savoir quel fichier créer et leurs rôles. Utilisé dans bcp de frameworks
 Sépare la logique du code en 3 parties: __
 
 - Modèle(Model) = données à afficher. Récupère infos brutes dans la bdd et les organise ,rassemble pr être traitées par le contrôleur. On y retrouve uniquement les requêtes sql. 
@@ -11,13 +11,13 @@ Sépare la logique du code en 3 parties: __
 
 ## Le routeur
 
-__ Dans MVC seul fichier qui est le point d'entrée de l'application, quelle que soit la page affichée. Systématiquement appelé, envoie la demande au bonc controleur. Trouve le bon chemin pour que l'utilisateur récupère la bonne page. fichier index.php qui est à la racine publique de notre projet. __
+__Dans MVC seul fichier qui est le point d'entrée de l'application, quelle que soit la page affichée. Systématiquement appelé, envoie la demande au bonc controleur. Trouve le bon chemin pour que l'utilisateur récupère la bonne page. fichier index.php qui est à la racine publique de notre projet. __
 
 //http://url_du_site/controleur/methode//
 
 ## .htacces
 
-__ réécriture d'URL proposé par les serveurs Apache avec fichier .H=htacces __
+__réécriture d'URL proposé par les serveurs Apache avec fichier .H=htacces __
 
 //RewriteEngine On // permet de démarer la réécriture d'Url
 //RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?p=$1//  permet de définir une règle de réécriture d'URL
@@ -27,6 +27,6 @@ ex url finale: http://url_du_site/index.php?p=articles/lire
 
 ## index.php
 
-__ Contient données Url
+__Contient données Url
 
 
