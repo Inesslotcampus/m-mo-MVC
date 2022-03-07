@@ -15,7 +15,7 @@ __Dans MVC seul fichier qui est le point d'entrée de l'application, quelle que 
 
 //http://url_du_site/controleur/methode//
 
-## .htacces
+### .htacces
 
 __réécriture d'URL proposé par les serveurs Apache avec fichier .H=htacces__
 
@@ -25,8 +25,14 @@ __réécriture d'URL proposé par les serveurs Apache avec fichier .H=htacces__
 
 ex url finale: http://url_du_site/index.php?p=articles/lire
 
-## index.php
+### index.php
 
-__Contient données Url
+__Contient données Url. 
+1. Appeler ds fichier, controleur et modèle principaux qui servent de base commune à tous les fichiers.
+2. Pour la protabilité du projet: sauvegarder chemin généré dans la constante "ROOT"
+3. Constante géréré depuis des infos dans la super globale "$_SERVER" qui contient le chemin complet vers notre fichier
+4. Enlever nom "index.php" au moyen de la fonction php "str_replace" // define('ROOT', str_replace('index.php','',$_SERVER['SCRIPT_FILENAME']));//
+5. on peut utiliser root pour appeler nos fichiers //require_once(ROOT.'app/Model.php');
+require_once(ROOT.'app/Controller.php');//
 
 
